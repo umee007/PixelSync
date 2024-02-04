@@ -1,0 +1,23 @@
+{
+  "name": "pixelsync",
+  "version": "1.0.0",
+  "description": "A Video Conference APP",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run dev --prefix Client",
+    "server": "nodemon Server/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Umar Rasheed",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.3"
+  },
+  "dependencies": {
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.1.1"
+  }
+
+}
